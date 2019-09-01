@@ -1,0 +1,10 @@
+- key: dependencies
+  title: Production dependencies
+- key: peerDependencies
+  title: Peer dependencies
+- key: optionalDependencies
+  title: Optional dependencies
+- key: devDependencies
+  title: Development dependencies
+- key: [bundleDependencies, bundledDependencies]
+  title: Bundled dependencies
