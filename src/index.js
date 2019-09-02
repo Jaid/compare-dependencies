@@ -57,6 +57,9 @@ import DependencyHolder from "./DependencyHolder"
  * @prop {string[]} removed
  * @prop {UpgradeEvent[]} upgraded
  * @prop {DowngradeEvent[]} downgraded
+ * @prop {UnlockEvent[]} unlocked
+ * @prop {LockEvent[]} locked
+ * @prop {MoveEvent} moved
  */
 
 /**
