@@ -17,6 +17,18 @@ import DependencyHolder from "./DependencyHolder"
  */
 
 /**
+ * @typedef {Object} AddEvent
+ * @prop {string} name
+ * @prop {import("sver").SemverRange} range
+ */
+
+/**
+ * @typedef {Object} RemoveEvent
+ * @prop {string} name
+ * @prop {import("sver").SemverRange} range
+ */
+
+/**
  * @typedef {Object} MoveEvent
  * @prop {string} name
  * @prop {string} oldType
@@ -53,8 +65,8 @@ import DependencyHolder from "./DependencyHolder"
 
 /**
  * @typedef {Object} TypeChanges
- * @prop {string[]} added
- * @prop {string[]} removed
+ * @prop {AddEvent[]} added
+ * @prop {RemoveEvent[]} removed
  * @prop {UpgradeEvent[]} upgraded
  * @prop {DowngradeEvent[]} downgraded
  * @prop {UnlockEvent[]} unlocked
@@ -86,13 +98,29 @@ export default (oldPkg, newPkg) => {
     const addedDependencyNames = difference(newDependencyNames, oldDependencyNames)
     const removedDependencyNames = difference(oldDependencyNames, newDependencyNames)
     const changes = {
-      added: addedDependencyNames.filter(name => !oldDependencies.hasDependency(name)),
-      removed: removedDependencyNames.filter(name => oldDependencies.hasDependency(name)),
+      added: [],
+      removed: [],
       upgraded: [],
       downgraded: [],
       locked: [],
       unlocked: [],
       moved: [],
+    }
+    for (const name of addedDependencyNames) {
+      if (!oldDependencies.hasDependency(name)) {
+        changes.added.push({
+          name,
+          range: new SemverRange(newDependencies.getDependenciesForType(type)[name]),
+        })
+      }
+    }
+    for (const name of removedDependencyNames) {
+      if (oldDependencies.hasDependency(name)) {
+        changes.removed.push({
+          name,
+          range: new SemverRange(oldDependencies.getDependenciesForType(type)[name]),
+        })
+      }
     }
     for (const name of addedDependencyNames.filter(name => oldDependencies.hasDependency(name))) {
       changes.moved.push({

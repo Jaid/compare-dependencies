@@ -23,9 +23,9 @@ it("should run for realistic package", () => {
     },
   }
   const result = compareDependencies(oldPkg, newPkg)
-  expect(result.production.added).toStrictEqual(["jaid-core"])
-  expect(result.production.removed).toStrictEqual(["zahl"])
-  expect(result.production.upgraded[0].name).toStrictEqual("eslint")
+  expect(result.production.added[0].name).toBe("jaid-core")
+  expect(result.production.removed[0].name).toBe("zahl")
+  expect(result.production.upgraded[0].name).toBe("eslint")
   expect(result.production.upgraded[0].oldRange.version).toMatchObject({
     major: 6,
     minor: 1,
@@ -64,8 +64,11 @@ it("should run for detailed package", () => {
     },
   }
   const result = compareDependencies(oldPkg, newPkg)
-  expect(result.production.added).toStrictEqual(["b"])
-  expect(result.production.removed).toStrictEqual(["a", "h"])
+  expect(result.production.added.length).toBe(1)
+  expect(result.production.added[0].name).toBe("b")
+  expect(result.production.removed.length).toBe(2)
+  expect(result.production.removed[0].name).toBe("a")
+  expect(result.production.removed[1].name).toBe("h")
   expect(result.production.upgraded.length).toBe(1)
   expect(result.production.upgraded[0].name).toBe("d")
   expect(result.production.downgraded.length).toBe(1)
