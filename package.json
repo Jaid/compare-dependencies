@@ -4,7 +4,12 @@
   "version": "0.1.0",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
   "dependencies": {
-    "@babel/runtime": "^7.5.5"
+    "@babel/runtime": "^7.5.5",
+    "ensure-array": "^1.0.0",
+    "has-content": "^1.1.0",
+    "lodash": "^4.17.15",
+    "semver": "^6.3.0",
+    "sver": "^1.8.2"
   },
   "devDependencies": {
     "acorn": "^7.0.0",
