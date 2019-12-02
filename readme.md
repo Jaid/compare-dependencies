@@ -3,6 +3,15 @@
 
 Compares listed dependencies between two package.json objects.
 
+## Installation
+<a href='https://npmjs.com/package/compare-dependencies'><img alt='npm logo' src='https://raw.githubusercontent.com/npm/logos/master/npm%20logo/npm-logo-red.png' height=16/></a>
+```bash
+npm install --save compare-dependencies@^
+```
+<a href='https://yarnpkg.com/package/compare-dependencies'><img alt='Yarn logo' src='https://raw.githubusercontent.com/yarnpkg/assets/master/yarn-kitten-full.png' height=24/></a>
+```bash
+yarn add compare-dependencies@^
+```
 
 
 ## Try it out
