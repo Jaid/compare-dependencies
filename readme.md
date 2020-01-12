@@ -36,24 +36,6 @@ yarn add compare-dependencies@^2.0.0
 ```
 
 
-## Try it out
-
-
-
-Open a browser's JavaScript console and execute:
-
-```javascript
-const scriptElement = document.createElement("script");
-scriptElement.setAttribute("type", "text/javascript");
-scriptElement.setAttribute("src", "https://cdn.jsdelivr.net/npm/compare-dependencies@2.0.0/index.js");
-document.querySelector("head").appendChild(scriptElement);
-```
-
-compare-dependencies is now stored in the global variable `compareDependencies`. The following console expression should return something other than `"undefined"`.
-
-```javascript
-typeof compareDependencies.default
-```
 
 
 
