@@ -1,9 +1,9 @@
 # compare-dependencies
 
 
-<a href="https://raw.githubusercontent.com/Jaid/compare-dependencies/master/license.txt"><img src="https://img.shields.io/github/license/Jaid/compare-dependencies?style=flat-square" alt="License"/></a>  
-<a href="https://actions-badge.atrox.dev/Jaid/compare-dependencies/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2FJaid%2Fcompare-dependencies%2Fbadge" alt="Build status"/></a> <a href="https://github.com/Jaid/compare-dependencies/commits"><img src="https://img.shields.io/github/commits-since/Jaid/compare-dependencies/v2.0.0?style=flat-square&logo=github" alt="Commits since v2.0.0"/></a> <a href="https://github.com/Jaid/compare-dependencies/commits"><img src="https://img.shields.io/github/last-commit/Jaid/compare-dependencies?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/Jaid/compare-dependencies/issues"><img src="https://img.shields.io/github/issues/Jaid/compare-dependencies?style=flat-square&logo=github" alt="Issues"/></a>  
-<a href="https://npmjs.com/package/compare-dependencies"><img src="https://img.shields.io/npm/v/compare-dependencies?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/Jaid/compare-dependencies/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/compare-dependencies?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/compare-dependencies"><img src="https://img.shields.io/npm/dm/compare-dependencies?style=flat-square&logo=npm" alt="Downloads"/></a>
+<a href="https://raw.githubusercontent.com/jaid/compare-dependencies/master/license.txt"><img src="https://img.shields.io/github/license/jaid/compare-dependencies?style=flat-square" alt="License"/></a> <a href="https://github.com/sponsors/jaid"><img src="https://img.shields.io/badge/<3-Sponsor-FF45F1?style=flat-square" alt="Sponsor compare-dependencies"/></a>
+<a href="https://actions-badge.atrox.dev/jaid/compare-dependencies/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2Fjaid%2Fcompare-dependencies%2Fbadge" alt="Build status"/></a> <a href="https://github.com/jaid/compare-dependencies/commits"><img src="https://img.shields.io/github/commits-since/jaid/compare-dependencies/v2.0.0?style=flat-square&logo=github" alt="Commits since v2.0.0"/></a> <a href="https://github.com/jaid/compare-dependencies/commits"><img src="https://img.shields.io/github/last-commit/jaid/compare-dependencies?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/jaid/compare-dependencies/issues"><img src="https://img.shields.io/github/issues/jaid/compare-dependencies?style=flat-square&logo=github" alt="Issues"/></a>  
+<a href="https://npmjs.com/package/compare-dependencies"><img src="https://img.shields.io/npm/v/compare-dependencies?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/jaid/compare-dependencies/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/compare-dependencies?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/compare-dependencies"><img src="https://img.shields.io/npm/dm/compare-dependencies?style=flat-square&logo=npm" alt="Downloads"/></a>
 
 **Compares listed dependencies between two package.json objects.**
 
@@ -41,14 +41,13 @@ yarn add compare-dependencies@^2.0.0
 
 
 
-
 ## Development
 
 
 
 Setting up:
 ```bash
-git clone git@github.com:Jaid/compare-dependencies.git
+git clone git@github.com:jaid/compare-dependencies.git
 cd compare-dependencies
 npm install
 ```
