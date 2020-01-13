@@ -35,5 +35,6 @@
     "prepareActionJest": "npm run build:prod"
   },
   "name": "compare-dependencies",
-  "description": "Compares listed dependencies between two package.json objects."
+  "description": "Compares listed dependencies between two package.json objects.",
+  "funding": "https://github.com/sponsors/jaid"
 }
