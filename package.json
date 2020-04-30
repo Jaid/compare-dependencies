@@ -41,5 +41,22 @@
     "url": "https://github.com/jaid/compare-dependencies"
   },
   "homepage": "https://github.com/Jaid/compare-dependencies",
-  "keywords": []
+  "keywords": [
+    "compare",
+    "compare-objects",
+    "comparison",
+    "dependencies",
+    "dependency",
+    "diff",
+    "difference",
+    "lib",
+    "library",
+    "node",
+    "node-js",
+    "nodejs",
+    "package-json",
+    "pkg",
+    "util",
+    "utility"
+  ]
 }
