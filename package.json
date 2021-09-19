@@ -58,5 +58,6 @@
     "pkg",
     "util",
     "utility"
-  ]
+  ],
+  "type": "module"
 }
